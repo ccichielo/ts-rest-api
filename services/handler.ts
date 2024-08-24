@@ -33,6 +33,10 @@ async function handler(
     };
   }
 
+  response.headers = {
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Methods": "*",
+  };
   return response;
 }
 
