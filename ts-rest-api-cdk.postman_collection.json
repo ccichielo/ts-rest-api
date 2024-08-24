@@ -1,0 +1,71 @@
+{
+	"info": {
+		"_postman_id": "9b897158-d46f-44fc-8fbb-fc6f8d857688",
+		"name": "ts-rest-api-cdk",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13773949"
+	},
+	"item": [
+		{
+			"name": "Employee",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://70cjah2rpb.execute-api.us-east-1.amazonaws.com/prod/employee?id=db64ff33-8486-49c0-8c69-4a901d218f7d",
+					"protocol": "https",
+					"host": [
+						"70cjah2rpb",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"prod",
+						"employee"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "db64ff33-8486-49c0-8c69-4a901d218f7d"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Employee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Chris\",\r\n    \"position\": \"Engineer\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://70cjah2rpb.execute-api.us-east-1.amazonaws.com/prod/employee",
+					"protocol": "https",
+					"host": [
+						"70cjah2rpb",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"prod",
+						"employee"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
